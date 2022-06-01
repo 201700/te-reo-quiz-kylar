@@ -12,15 +12,15 @@ time.sleep(1)
 def question1():
   global score
   print("this is question one")
-  choice = input("Mōrena means good morning in te reo / true or false? ")
-  choice = choice.lower()
-  
-if choice == "true":
-  print("correct")
-  score += 1
-elif choice == "false":
-  print("incorrect")
-  score -= 1
+  choice_1 = input("Mōrena means good morning in te reo / true or false? ")
+  choice_1 = choice_1.lower()
+
+  if choice_1 == "true":
+   print("correct")
+   score += 1
+  elif choice_1 == "false":
+   print("incorrect")
+   score -= 1
 
 #this is question two, in questions two it ask you a question if purū  the means green in english. this can be correct or False. if you enter true or false,then it will tell you if you are correct or incorrect. then it will move you to question 3.
 def question2():
@@ -29,12 +29,12 @@ def question2():
   space = input("purū means green in te reo / true or false? ")
   space = space.lower()
   
-if space == "true":
-  print("incorrect")
-  score -= 1
-elif space == "false":
-  print("correct")
-  score += 1
+  if space == "true":
+    print("incorrect")
+    score -= 1
+  elif space == "false":
+    print("correct")
+    score += 1
 #this is question three, in questions three it ask you a question if Kei te nga mihi  the means  how are you in english. this can be correct or False. if you enter true or false,then it will tell you if you are correct or incorrect. then it will move you to question 4.
 def question3():
   global score
@@ -42,38 +42,38 @@ def question3():
   color = input("Kei te nga mihi means how are you in te reo / true or false? ")
   color = color.lower()
   
-if color == "true":
-  print("incorrect")
-  score -= 1
-elif color == "false":
-  print("correct")
-  score += 1
+  if color == "true":
+     print("incorrect")
+     score -= 1
+  elif color == "false":
+    print("correct")
+    score += 1
 #this is question two, in questions four it ask you a question if akomanga the means classroom in english. this can be correct or False. if you enter true or false,then it will tell you if you are correct or incorrect. then it will move you to question 5.
 def question4():
   global score
   print("this is question four")
   size = input("akomanga means classroom in te reo / true or false? ")
-  size == size.lower()
+  size = size.lower()
   
-if size == "true":
-  print("correct")
-  score += 1
-elif size == "false":
-  print("incorrect")
-  score -= 1
+  if size == "true":
+     print("correct")
+     score += 1
+  elif size == "false":
+    print("incorrect")
+    score -= 1
 #this is question five, in questions five it ask you a question if rorohiko the means computer in english. this can be correct or False. if you enter true or false,then it will tell you if you are correct or incorrect. then it will end.
 def question5():
   global score
   print("this is question five")
   line = input("rorohiko means computer in te reo / true or false? ")
-  line == line.lower()
+  line = line.lower()
   
-if line == "true":
-  print("correct")
-  score += 1
-elif line == "false":
-  print("incorrect")
-  score -= 1
+  if line == "true":
+     print("correct")
+     score += 1
+  elif line == "false":
+    print("incorrect")
+    score -= 1
 
 
 question1()
@@ -86,3 +86,4 @@ question4()
 
 question5()
 (score)
+print(score)
